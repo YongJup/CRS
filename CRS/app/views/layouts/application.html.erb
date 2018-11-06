@@ -15,6 +15,7 @@
   </head>
 
       <!-- Begin Navbar -->
+      <% if user_signed_in? %>
       <div id="nav">
         <div class="navbar navbar-inverse navbar-fixed-top" data-spy="affix" data-offset-top="100" style = "height : 50px">
             <div class="container">
@@ -51,7 +52,7 @@
             <!--/.contatiner -->
       </div>
       </div>
-    
+    <% end %>
     <%= yield %>
 
   </body>
