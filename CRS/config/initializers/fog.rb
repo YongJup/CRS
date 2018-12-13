@@ -2,8 +2,8 @@
      config.fog_provider = 'fog/aws'                        # required
      config.fog_credentials = {
      provider:              'AWS',                        # required
-         aws_access_key_id:      'AKIAIAJ7WDCRDFUJJDCA',                       # required
-         aws_secret_access_key:  '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',                       # required
+         aws_access_key_id:      '',                       # required
+         aws_secret_access_key:  '',                       # required
          region:                'ap-northeast-2',             # 아시아-한국서버 명칭
          endpoint:              'https://s3-ap-northeast-2.amazonaws.com' # 아시아-한국서버
      }
