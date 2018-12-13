@@ -12,10 +12,19 @@
 
 
 
-
-
-<h2>계정 활성화 메일 재전송</h2>
-
+<body class="img">
+    <div class="container">
+        <div class="row">
+			<div class="col-md-5 mx-auto">
+			<div id="first">
+				<div class="myform form ">
+					 <div class="logo mb-3">
+						 <div class="col-md-12 text-center">
+<h3>계정 활성화 메일 재전송</h3>
+						 </div>
+					</div>
+					
+					
 <%= simple_form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
   <%= f.error_notification %>
   <%= f.full_error :confirmation_token %>
@@ -28,9 +37,26 @@
                 input_html: { autocomplete: "email" } %>
   </div>
 
-  <div class="form-actions">
+  <div class="col-md-12 text-center ">
     <%= f.button :submit, "재전송하기" %>
   </div>
+  
+     <div class="col-md-12 ">
+      <div class="login-or">
+         <hr class="hr-or">
+         <span class="span-or">or</span>
+      </div>
+   </div>
 <% end %>
-
+<div class="form-group">
 <%= render "devise/shared/links" %>
+</div>
+                        </form>
+                 
+				</div>
+			</div>
+			  
+		</div>
+      </div>   
+         
+</body>
